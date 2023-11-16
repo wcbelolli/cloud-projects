@@ -1,0 +1,6 @@
+New-AzResourceGroupDeployment : A parameter cannot be found that matches parameter name 'storageAccountType'.
+At line:4 char:1
++ -storageAccountType Standard_LRS
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-AzResourceGroupDeployment], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.NewAzureResourceGroupDeploymentCmdlet

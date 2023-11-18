@@ -1,0 +1,40 @@
+#Deploy the parameterized ARM template
+#Here, you'll change the name of the deployment to better reflect what this deployment does and fill in a value for the new parameter.
+#Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed. 
+#Fill in a unique name for the storageName parameter.
+#Remember, this name must be unique across all of Azure. 
+#You can use the unique name you created in the last unit. In that case, Azure will update the resource instead of creating a new one.
+
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageName": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24,
+      "metadata": {
+        "description": "The Name of The Azure Resource"
+      }
+    }
+  },
+  "functions": [],
+  "variables": {},
+  "resources": [
+    {
+      "name": "[parameters('storageName')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2019-04-01",
+      "tags": {
+        "displayName": "[parameters('storageName')]"
+      },
+      "location": "[resourceGroup().location]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      }
+    }
+  ],
+  "outputs": {}
+}

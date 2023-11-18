@@ -1,4 +1,5 @@
-PS C:\Users\wbelolli\cloud-projects\ARM Template> New-AzResourceGroupDeployment `
+#PS C:\Users\wbelolli\cloud-projects\ARM Template> 
+New-AzResourceGroupDeployment `
 >> -Name $deploymentName `
 >> -TemplateFile $templateFile
 
@@ -15,4 +16,4 @@ Parameters              :
                           storageAccountType    String                     "Standard_LRS"
 
 Outputs                 :
-DeploymentDebugLogLevel :
+#DeploymentDebugLogLevel :

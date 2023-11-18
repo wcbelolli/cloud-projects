@@ -1,0 +1,18 @@
+PS C:\Users\wbelolli\cloud-projects\ARM Template> New-AzResourceGroupDeployment `
+>> -Name $deploymentName `
+>> -TemplateFile $templateFile
+
+
+DeploymentName          : blanketemplate-18-25-2023
+ResourceGroupName       : learn-a6f4220c-185a-405a-97f4-8c1132b99211
+ProvisioningState       : Succeeded
+Timestamp               : 18/11/2023 05:34:09
+Mode                    : Incremental
+TemplateLink            :
+Parameters              :
+                          Name                  Type                       Value
+                          ====================  =========================  ==========
+                          storageAccountType    String                     "Standard_LRS"
+
+Outputs                 :
+DeploymentDebugLogLevel :

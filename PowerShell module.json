@@ -1,0 +1,14 @@
+#Az is the formal name for the Azure PowerShell module, which contains cmdlets to work with Azure features. 
+#It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. 
+#You can work with resource groups, storage, virtual machines, Microsoft Entra ID, containers, machine learning, and so on. 
+#The Az module is an open-source component
+
+Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
+
+NuGet provider is required to continue
+PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
+ provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+'C:\Users\<username>\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
+'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and import
+ the NuGet provider now?
+ [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
